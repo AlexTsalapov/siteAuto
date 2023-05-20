@@ -1,0 +1,568 @@
+@font-face {
+    font-family: "Black";
+    src: url("../fonts/Black.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Regular";
+    src: url("../fonts/Regular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Bold";
+    src: url("../fonts/Bold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "SemiBold";
+    src: url("../fonts/SemiBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Medium";
+    src: url("../fonts/Medium.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+#name {
+    font-family: Bold;
+    margin: 0 0 5% 40%;
+    color: white;
+    font-size: 4vw;
+}
+
+
+body {
+    background-image: url("../img/background.png");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#marks {
+    padding: 0 10% 5% 20%;
+}
+
+#marks img {
+    margin: 0 0 5% 10%;
+    height: 8vw;
+    width: 8vw;
+}
+
+#markName img {
+    margin: 0 0 1% 7%;
+    height: 10vw;
+    width: 10vw;
+}
+
+#nameModel {
+    padding-left: 5vw;
+    color: #ffffff;
+    font-size: 3vw;
+}
+
+#body {
+    padding: 5% 15% 5% 15%;
+}
+
+#titleMain {
+    width: 60%;
+}
+
+.title1 {
+    width: 100%;
+    font-size: 144px;
+    font-family: Black;
+    color: white;
+    margin-bottom: -4%;
+    text-align: justify;
+    text-align-last: justify;
+}
+
+.title2 {
+    width: 100%;
+    font-size: 64px;
+    font-family: Black;
+    color: white;
+    margin-bottom: -2%;
+    text-align: justify;
+    text-align-last: justify;
+    white-space: nowrap;
+}
+
+.subtitle {
+    width: 100%;
+    font-size: 42px;
+    font-family: Bold;
+    color: white;
+    margin: 12% 0 12% 0;
+    text-align: center;
+    white-space: nowrap;
+}
+
+#countries {
+    position: relative;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: justify;
+}
+
+#countries button {
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+    text-align: center;
+    vertical-align: top;
+    width: 30%;
+    margin-right: 1.4%;
+    background-color: transparent;
+    color: white;
+    border-color: white;
+    border-width: 3px;
+    padding: 3% 0 3% 0;
+    font-size: 3vw;
+    font-family: Bold;
+}
+
+#countries button:hover {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.header {
+    background-image: url("../img/background.png");
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    border: 3px solid white;
+    font-size: 26px;
+    font-family: Bold;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+#title {
+    width: 25%;
+    text-align: center;
+    padding: 1.3% 0 1.3% 0;
+}
+
+#title:hover, #navigationMenu:hover {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+#search {
+    width: 50%;
+    background-color: transparent;
+    border-width: 0 3px 0 3px;
+    border-color: white;
+    color: white;
+    font-size: 26px;
+    font-family: Bold;
+    padding: 0 5% 0 5%;
+    outline: none;
+}
+
+#search::-webkit-input-placeholder {
+    color: white;
+    outline: none;
+}
+
+#search:hover {
+    outline: none;
+}
+
+#search:active {
+    outline: none;
+}
+
+#navigationMenu {
+    width: 25%;
+    height: 100%;
+    padding: 1.3% 0 1.3% 0;
+    display: inline-block;
+}
+
+#navigationMenu:hover #navigationMenuContent {
+    display: block;
+}
+
+#navigationMenu:hover #navigationMenuButton {
+    background-color: transparent;
+    cursor: pointer;
+}
+
+#navigationMenuButton {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    color: white;
+    text-align: center;
+    font-size: 26px;
+    font-family: Bold;
+    border: none;
+}
+
+#navigationMenuContent {
+    margin-top: 1%;
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 3px solid white;
+    min-width: 160px;
+    width: 17.2%;
+    z-index: 1;
+}
+
+/* Ссылки внутри выпадающего списка */
+#navigationMenuContent a {
+    color: white;
+    font-size: 26px;
+    font-family: Bold;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Изменение цвета выпадающих ссылок при наведении курсора */
+#navigationMenuContent a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.content {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+#country {
+    color: white;
+    font-size: 42px;
+    font-family: Bold;
+    padding: 2% 0 0 5%;
+}
+
+#models {
+    display: flex;
+}
+
+#models img {
+    position: relative;
+    margin: 0 0 5% 5%;
+    height: 15vw;
+    width: 20vw;
+}
+
+#marksCountry {
+    height: 100%;
+}
+
+.mark {
+    background-size: cover;
+    width: 30%;
+    height: 30%;
+    padding-right: 3%;
+}
+
+.mark:hover {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.footer {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 3px solid white;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    font-family: Bold;
+    padding: 1.3% 0 1.3% 0;
+}
+.chose-item:hover{
+    background-color: rgb(255,255,255,0.5);
+    padding-top: 4px;
+}
+.content-item {
+    width: 100%;
+    margin-bottom: 3%;
+
+}
+.review-title{
+    margin: 0 0 2% 0;
+    font-size: 2vw;
+    display: flex;
+}
+.addReview{
+    margin: 0 0 0 70%;
+    font-size: 1.5vw;
+    background-color: rgba(0,0,0,0.3);
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.content-items {
+    display: flex;
+}
+
+.content-item-image {
+    position: relative;
+    box-sizing: border-box;
+    width: 30%;
+    float: left;
+}
+
+.content-item-image img {
+    border-radius: 12px;
+    padding-left: 1%;
+    height: 14vw;
+    width: 20vw;
+}
+
+
+.content-item-title a {
+    font-family: SemiBold, serif;
+    font-size: 16px;
+    color: #FFFFFF;
+    text-align: justify;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    line-clamp: 1;
+}
+
+.content-item-title {
+    font-family: SemiBold, serif;
+    font-size: 2.5vw;
+    color: white;
+    position: relative;
+    box-sizing: border-box;
+    margin: 0 2% 2% 2%;
+    cursor: pointer;
+    text-align: justify;
+}
+
+.content-item-generation {
+    font-family: Medium, serif;
+    font-size: 2vw;
+    color: white;
+    position: relative;
+    box-sizing: border-box;
+    margin: 2% 0 0 0;
+}
+
+.content-item-description {
+    font-family: Medium, serif;
+    font-size: 1.5vw;
+    color: white;
+    position: relative;
+    box-sizing: border-box;
+    margin: 2% 0 0 0;
+}
+
+#searchName {
+    font-family: SemiBold, serif;
+    font-size: 2.5vw;
+    color: white;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.review-item-title {
+    font-family: SemiBold, serif;
+    font-size: 1.5vw;
+    color: white;
+    position: relative;
+    box-sizing: border-box;
+    margin: 0 2% 2% 2%;
+    text-align: justify;
+}
+
+.line {
+    border-color: white;
+    border: solid 1px;
+    height: 0px;
+    width: 100%;
+
+}
+.rating-result {
+    width: 100%;
+    margin: 0 auto;
+}
+.rating-result span {
+    padding: 0;
+    font-size: 3vw;
+    margin: 0 3px;
+    line-height: 1;
+    color: lightgrey;
+    text-shadow: 1px 1px #bbb;
+}
+.rating-result > span:before {
+    content: '★';
+}
+.rating-result > span.active {
+    color: gold;
+    text-shadow: 1px 1px #c60;
+}
+.rating-area {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+
+#modal {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.8s ease 0s;
+}
+
+#modal.open {
+    opacity: 1;
+    visibility: visible;
+}
+
+#modal-body {
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#modal-content {
+
+    border: solid #0d193f 10px;
+    padding: 2%;
+    background-color: #ebebeb;
+    width: 80%;
+}
+#modal-content textarea{
+    width: 90%;
+    height: 8vw;
+    font-size: 1.3vw;
+    padding-left: 1vw;
+    padding-top: 1vw;
+}
+#modal-content input{
+    width: 50%;
+    height: 2vw;
+    font-size: 1.5vw;
+    padding-left: 1vw;
+}
+
+#modal-content p{
+    font-size: 1.5vw;
+}
+.close--one {
+    font-size: 1.5vw;
+    cursor: pointer;
+    margin-left: auto;
+    color: white;
+    padding-right: 2%;
+
+}
+.modal_btn {
+    margin-top: 2%;
+    font-size: 1.5vw;
+    margin-left: 25vw;
+    width: 15vw;
+    height: 3vw;
+    border-radius: 45px;
+    background-color: rgba(0,0,0,0.3);
+    color: white;
+}
+.inputBig{
+    width: 90%;
+    height: 7vw;
+    padding-left: 1vw;
+    border-radius: 15px;
+    font-size: 1.5vw;
+    background-color: rgba(0,0,0,0.3);
+    color: lightgray;
+}
+.inputLit{
+    width: 20%;
+    height: 5vw;
+    padding-left: 1vw;
+    border-radius: 15px;
+    font-size: 1.5vw;
+    background-color: rgba(0,0,0,0.3);
+    color: lightgray;
+}
+.reviewT{
+    color: white;
+    padding-left: 1vw;
+    font-family: Medium, serif;
+}
+.reviewT p{
+    font-size: 1.5vw;
+}
+.star-rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+
+.radio-input {
+    position: fixed;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.radio-label {
+    cursor: pointer;
+    font-size: 0;
+    color: rgba(0,0,0,0.2);
+    transition: color 0.1s ease-in-out;
+}
+
+.radio-label:before {
+    content: "★";
+    display: inline-block;
+    font-size: 4vw;
+}
+
+.radio-input:checked ~ .radio-label {
+    color: #ffc700;
+    color: gold;
+}
+
+.radio-label:hover,
+.radio-label:hover ~ .radio-label {
+    color: goldenrod;
+}
+
+.radio-input:checked + .radio-label:hover,
+.radio-input:checked + .radio-label:hover ~ .radio-label,
+.radio-input:checked ~ .radio-label:hover,
+.radio-input:checked ~ .radio-label:hover ~ .radio-label,
+.radio-label:hover ~ .radio-input:checked ~ .radio-label {
+    color: darkgoldenrod;
+}
+
+
+.average-rating {
+    position: relative;
+    appearance: none;
+    color: transparent;
+    width: auto;
+    display: inline-block;
+    vertical-align: baseline;
+    font-size: 25px;
+}
+
+
+
+form {
+    margin: 0 0 50px;
+}
+.reviewShow div div{
+    font-family: Regular, serif;
+}

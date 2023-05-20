@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="../styles/style.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <title>Марка</title>
+
+</head>
+<body style="padding: 0 15% 0 15%; margin: 0 0 0 0; background-image: url('../img/backgroundModel.png');">
+<div id="header" class="header">
+    <div id="title"><a onclick=toHome() style="text-decoration: none; color: white;">AUTOGUIDE</a></div>
+    <input id="search" type="search" placeholder="НАЙТИ МАШИНУ..." autocapitalize="off"/>
+    <div id="navigationMenu">
+        <button id="navigationMenuButton">КАТАЛОГ</button>
+        <div id="navigationMenuContent">
+            <a onclick=toCountry("ЕВРОПА")>ЕВРОПА</a>
+            <a onclick=toCountry("АМЕРИКА")>АМЕРИКА</a>
+            <a onclick=toCountry("АЗИЯ")>АЗИЯ</a>
+
+        </div>
+    </div>
+</div>
+<div class="content">
+    <div id="markName"></div>
+    <div id="content-item" class="content-item"></div>
+
+    </div>
+</div>
+<script src="../script/methods.js"></script>
+<script src="../script/markScript.js"></script>
+</body>
+</html>
+
+
+</html>
